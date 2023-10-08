@@ -1,6 +1,6 @@
 import express from "express";
-import { getDeptGallery,insertGallery } from "../controllers/gallery-controller";
+import { getAllGallery,insertGallery } from "../controllers/gallery-controller";
 const galleryRouter = express.Router();
-galleryRouter.get("/:id",getDeptGallery);
+galleryRouter.get("/all",getAllGallery);
 galleryRouter.post("/insert",insertGallery);
 export default galleryRouter;
